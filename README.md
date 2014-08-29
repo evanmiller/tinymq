@@ -8,9 +8,11 @@ the channel processes could reside on different nodes in an Erlang cluster, but
 for now they all reside on the node where TinyMQ is started.
 
 Compile the code using:
+
 	erl -make
 
 or
+
 	./rebar get-deps
 	./rebar compile
 
