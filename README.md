@@ -7,6 +7,17 @@ destroyed as needed. Each channel is managed by a gen_server process. In theory
 the channel processes could reside on different nodes in an Erlang cluster, but
 for now they all reside on the node where TinyMQ is started.
 
+Compile the code using:
+	erl -make
+
+or
+	./rebar get-deps
+	./rebar compile
+
+and then you can start the erlang shell as:
+
+	erl -pa ebin/ -pz deps/*/ebin/
+
 Start the queue:
 
     application:start(tinymq), % the max_age env variable defines the
